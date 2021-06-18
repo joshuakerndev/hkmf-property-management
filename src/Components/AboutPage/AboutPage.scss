@@ -1,5 +1,51 @@
 .AboutPage {
+    display: flex;
+    justify-content: center;
     height: 100vh;
     width: 100%;
     background-color: rgba(14,22,24,255);
+}
+
+.AboutPageBGSection {
+    position: absolute;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../../assets/new7.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.AboutPageBGFilterSection {
+    position: absolute;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(14,22,24, 0.3);
+    filter: grayscale(100%);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.Shadow {
+    position: absolute;
+    top: 0px;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    z-index: 25;
+    background: linear-gradient(to bottom, rgb(25,25,25), transparent);
+}
+
+.AboutPageCenterButton {
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 30px;
+    width: 250px;
+    top: 50vh;
 }
