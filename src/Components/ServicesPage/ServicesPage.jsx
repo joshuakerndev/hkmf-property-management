@@ -6,7 +6,6 @@ const ServicesPage = () => {
     const [currentCircle, setCurrentCircle] = useState(1);
     
     const handleClickCircle = () => {
-        alert('CLICK');
         setCurrentCircle(currentCircle + 1);
     }
 
@@ -26,7 +25,15 @@ const ServicesPage = () => {
                             currentCircle === 1 ? handleClickCircle
                             : ''
                         } 
-                    />
+                    >
+                        <div className={
+                            currentCircle >= 1 ? 
+                            "CircleFilterActive CircleFilter" : 
+                            "CircleFilter"
+                            } 
+                        />
+                    </div>
+                    
                     <p className="CircleText">Hello</p>
                 </div>
                 <div className="CircleSection">
@@ -39,7 +46,14 @@ const ServicesPage = () => {
                             currentCircle === 2 ? handleClickCircle
                             : ''
                         } 
-                    />
+                    >
+                        <div className={
+                            currentCircle >= 2 ? 
+                            "CircleFilterActive CircleFilter" : 
+                            "CircleFilter"
+                            } 
+                        />
+                    </div>
                     <p className="CircleText">Hello</p>
                 </div>
                 <div className="CircleSection">
@@ -52,7 +66,14 @@ const ServicesPage = () => {
                             currentCircle === 3 ? handleClickCircle
                             : ''
                         } 
-                    />
+                    >
+                        <div className={
+                            currentCircle >= 3 ? 
+                            "CircleFilterActive CircleFilter" : 
+                            "CircleFilter"
+                            } 
+                        />
+                    </div>
                     <p className="CircleText">Hello</p>
                 </div>
                 <div className="CircleSection">
@@ -65,7 +86,14 @@ const ServicesPage = () => {
                             currentCircle === 4 ? handleClickCircle
                             : ''
                         } 
-                    />
+                    >
+                        <div className={
+                            currentCircle >= 4 ? 
+                            "CircleFilterActive CircleFilter" : 
+                            "CircleFilter"
+                            } 
+                        />
+                    </div>
                     <p className="CircleText">Hello</p>
                 </div>
             </div>

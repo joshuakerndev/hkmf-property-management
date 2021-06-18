@@ -57,6 +57,20 @@
     border-radius: 50%;
 }
 
+.CircleFilter {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.CircleFilterActive {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
 .Circle1 {
     background-image: url("../../assets/new5.jpg");
     background-size: cover;
