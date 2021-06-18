@@ -1,0 +1,37 @@
+.CustomDrawer-Container {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 35vw;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-35vw);
+    position:absolute;
+    overflow: hidden;
+  }
+  .CustomDrawer-Container-isOpen {
+    transform: translateX(0px);
+  }
+
+  .CustomDrawerContentTitle {
+    padding-top: 2rem;
+    color: white;
+    text-align: center;
+    font-size: calc(5% + 1.5vw + 1.5vh);
+  }
+
+  .CustomDrawerContentTextContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .CustomDrawerContentText {
+    text-align: start;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
