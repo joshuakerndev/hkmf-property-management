@@ -48,6 +48,7 @@
 .CircleSection {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .Circle {
@@ -55,6 +56,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .CircleFilter {
@@ -94,4 +96,18 @@
 .CircleText {
     color: white;
     text-align: center;
+    width: 80%;
+    padding-top: 15px;
+    opacity: 1;
+}
+
+.fade-in {
+    transition: opacity .5s ease-in-out;
+    height: auto;
+}
+
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .5s, opacity .5s ease-in-out;
 }
