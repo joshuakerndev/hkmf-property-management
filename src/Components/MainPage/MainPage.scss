@@ -16,14 +16,6 @@
     background-size: cover;
 }
 
-.MainPageHamburger {
-    padding-top: 50px;
-    padding-right: 50px;
-    position: fixed;
-    top: 0;
-    right:0;
-    z-index: 100;
-}
 
 .MainPageBottomText {
     color: white;
@@ -44,61 +36,10 @@
     }
 }
 
-// .MainPageDrawer {
-//     z-index: 1;
-//     position: absolute;
-//     left: 0;
-//     top: 50%;
-//     height: 49vh;
-// }
-
 .PageHeader {
     position: absolute;
     left: 50px;
     top: 50px;
     color: white;
     font-size: 48px;
-}
-
-.MenuChoicesGroup {
-    position: absolute;
-    top: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.HamburgerNavLink {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    text-align: center;
-}
-
-.MenuChoice {
-    color: white;
-    text-align: center;
-}
-
-.MenuChoice1 {
-    padding-right: 10%;
-}
-
-.MenuChoice3 {
-    padding-left: 10%;
-}
-
-.MenuChoiceHide {
-    display: none;
-    transition: all .5s ease-in-out;
-}
-
-.fade-in {
-    transition: opacity .5s ease-in-out;
-    height: auto;
-}
-.fade-out {
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility .5s, opacity .5s ease-in-out;
 }
