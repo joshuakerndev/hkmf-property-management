@@ -16,6 +16,10 @@
 }
 
 .ServicesPageBGFilterSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     position: absolute;
     top:0;
     width: 100%;
@@ -24,6 +28,12 @@
     filter: grayscale(100%);
     background-position: bottom;
     background-size: cover;
+}
+
+.ServicesPageHeaderText {
+    padding-top: 5vh;
+    font-size: 36px;
+    letter-spacing: 2px;
 }
 
 .Shadow {

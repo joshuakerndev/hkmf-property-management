@@ -13,7 +13,6 @@ const Navbar = () => {
     }
 
     const handleChangeOption = (input) => {
-        setSelectedOption(input);
     }
 
     return (
@@ -48,7 +47,15 @@ const Navbar = () => {
                     }
                     onClick = {() => handleChangeOption("First")}
                 >
-                    <NavLink to="/services" className="HamburgerNavLink">
+                    <NavLink 
+                        to="/services" 
+                        className="HamburgerNavLink"
+                        id={
+                            isSelectedOption === "First" ? 
+                            "current-header" 
+                            : ""
+                        }
+                    >
                         Services
                     </NavLink>
                 </div>
@@ -59,7 +66,15 @@ const Navbar = () => {
                     }
                     onClick = {() => handleChangeOption("Second")}
                 >
-                    <NavLink to="/about" className="HamburgerNavLink">
+                    <NavLink 
+                        to="/about" 
+                        className="HamburgerNavLink"
+                        id={
+                            isSelectedOption === "Second" ? 
+                            "current-header" 
+                            : ""
+                        }
+                    >
                         About
                     </NavLink>
                 </div>
@@ -70,7 +85,15 @@ const Navbar = () => {
                     }
                     onClick = {() => handleChangeOption("Third")}
                 >
-                    <NavLink to="/contact" className="HamburgerNavLink">
+                    <NavLink 
+                        to="/contact" 
+                        className="HamburgerNavLink"
+                        id={
+                            isSelectedOption === "Third" ? 
+                            "current-header" 
+                            : ""
+                        }
+                    >
                         Contact
                     </NavLink>
                 </div>

@@ -4,6 +4,9 @@ import './ContactPage.scss';
 const ContactPage = () => {
     return (
         <div className="ContactPage">
+            <div className="ContactPageHeaderText">
+                Contact
+            </div>
             <div className="BostonStrip">
                 <div className="BostonStripFilterSection">
                     <div className="BostonContactText">

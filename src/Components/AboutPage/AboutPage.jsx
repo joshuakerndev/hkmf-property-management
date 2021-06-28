@@ -15,6 +15,9 @@ const AboutPage = () => {
             <div className="AboutPageBGSection" />
             <div className="AboutPageBGFilterSection" >
             <div className="Shadow" />
+            <div className="AboutPageHeaderText">
+                About
+            </div>
                 <div className="AboutTextContainer">
                     <p 
                         className={

@@ -15,6 +15,18 @@
     background: linear-gradient(to bottom, rgb(25,25,25), transparent);
 }
 
+.AboutPageHeaderText {
+    display: flex;
+    justify-content: center;
+    top: 5vh;
+    width: 100vw;
+    color: white;
+    position: absolute;
+    padding-top: 15vh;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
 .AboutPageBGSection {
     left:0;
     width: 50%;

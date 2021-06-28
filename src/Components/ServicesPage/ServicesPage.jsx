@@ -13,7 +13,11 @@ const ServicesPage = () => {
     return (
         <div className="ServicesPage">
             <div className="ServicesPageBGSection" />
-            <div className="ServicesPageBGFilterSection" />
+            <div className="ServicesPageBGFilterSection">
+                <div className="ServicesPageHeaderText">
+                    Services
+                </div>
+            </div>
             <div className="Shadow" />
             <div className="ServicesPageContent">
                 <div className="CircleSection">
