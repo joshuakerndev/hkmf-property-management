@@ -13,6 +13,7 @@ const Navbar = () => {
     }
 
     const handleChangeOption = (input) => {
+        setMenuOpen(false);
     }
 
     return (

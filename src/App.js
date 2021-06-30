@@ -6,17 +6,52 @@ import AboutPage from './Components/AboutPage/AboutPage';
 import ContactPage from './Components/ContactPage/ContactPage';
 import Navbar from './Components/Navbar/Navbar';
 import { Switch, Route } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Switch>
-        <Route exact path="/" component={MainPage} />
-        <Route exact path="/services" component={ServicesPage} />
-        <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/contact" component={ContactPage} />
-      </Switch>
+      <Route render={({location}) => (
+        <TransitionGroup>
+          <CSSTransition key={location.key} classNames="page" timeout={500}>
+            <Switch location={location}>
+              <Route 
+                exact 
+                path="/" 
+                render={
+                routeProps => (
+                  <div className={"page"}>
+                    <MainPage {...routeProps} />
+                  </div>
+                  )
+                } />
+              <Route exact path="/services" render={
+                routeProps => (
+                  <div className="page">
+                    <ServicesPage {...routeProps} />
+                  </div>
+                  )
+                } />
+              <Route exact path="/about" render={
+                routeProps => (
+                  <div className="page">
+                    <AboutPage {...routeProps} />
+                  </div>
+                  )
+                } />
+              <Route exact path="/contact" render={
+                routeProps => (
+                  <div className="page">
+                    <ContactPage {...routeProps} />
+                  </div>
+                  )
+                } />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )}>
+      </Route>   
     </div>
   );
 }

@@ -3,3 +3,40 @@ body {
     width: 100%;
     overflow: hidden;
   }
+
+.page {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.page-enter {
+  transform: translateY(-100%)
+}
+
+.page-enter-active {
+  transform: translateY(0)
+}
+
+.page-exit-active {
+  transform: translateY(100%)
+}
+
+.none {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+.none-enter {
+  transform: translateY(-100%)
+}
+
+.none-exit-active {
+  transform: translateY(100%)
+}
+
+.none-enter-active {
+  transform: translateY(0)
+}
