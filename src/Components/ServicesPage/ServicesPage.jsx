@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
+import ServicesModal from '../ServicesModal/ServicesModal';
 import './ServicesPage.scss';
 import SERVICES_PAGE_TEXT from './SERVICES_PAGE_TEXT';
 
 const ServicesPage = () => {
 
     const [currentCircle, setCurrentCircle] = useState(1);
+    const [modalOpen, setModalOpen] = useState(false);
     
     const handleClickCircle = () => {
         setCurrentCircle(currentCircle + 1);
+        if(currentCircle === 4) {
+            setModalOpen(true);
+        }
+    }
+
+    const handleModalClose = () => {
+        setModalOpen(false);
     }
 
     return (
@@ -134,6 +143,7 @@ const ServicesPage = () => {
                     </p>
                 </div>
             </div>
+            <ServicesModal open={modalOpen} handleClose={handleModalClose} />
         </div>
     )
 }
