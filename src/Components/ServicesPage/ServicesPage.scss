@@ -7,12 +7,16 @@
 }
 
 .ServicesPageBGSection {
-    top:0;
     width: 100%;
-    height: 40%;
+    min-height: 35%;
     background-image: url("../../assets/new11.jpg");
     background-position: bottom;
     background-size: cover;
+}
+
+.HeaderGrid {
+    width: 100%;
+    padding-top: 50px;
 }
 
 .ServicesPageBGFilterSection {
@@ -20,10 +24,8 @@
     justify-content: center;
     align-items: center;
     color: white;
-    position: absolute;
-    top:0;
     width: 100%;
-    height: 40%;
+    height: 100%;
     background-color: rgba(14,22,24, 0.7);
     filter: grayscale(100%);
     background-position: bottom;
@@ -35,6 +37,8 @@
     font-size: 36px;
     letter-spacing: 2px;
     user-select: none;
+    display: flex;
+    justify-content: center;
 }
 
 .Shadow {
@@ -54,11 +58,23 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    overflow: scroll;
+    padding: 5%;
 }
 
 .CircleSection {
+    padding-top: 5%;
+}
+
+.CircleItemGrid {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.CircleItem {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
