@@ -30,14 +30,6 @@
     font-size: 48px;
 }
 
-.MenuChoicesGroup {
-    position: absolute;
-    top: 70px;
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .HamburgerNavLink {
     color: white;
     text-decoration: none;
@@ -51,19 +43,6 @@
     padding-top: 0;
 }
 
-// .MenuChoice1 {
-//     padding-right: 5%;
-// }
-
-// .MenuChoice2 {
-//     padding-right: 5%;
-//     padding-left: 5%;
-// }
-
-// .MenuChoice3 {
-//     padding-left: 5%;
-// }
-
 .fade-in {
     transition: opacity .5s ease-in-out;
     height: auto;
@@ -73,12 +52,4 @@
     opacity: 0;
     visibility: hidden;
     transition: visibility .5s, opacity .5s ease-in-out;
-}
-
-.is-selected-option {
-    position: fixed;
-    padding-left: 0;
-    padding-right: 0;
-    top: 20vh;
-    visibility: hidden;
 }

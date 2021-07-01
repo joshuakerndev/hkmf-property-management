@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
-import { NavLink, Link } from 'react-router-dom';
+import MenuChoicesGroupLarge from '../MenuChoicesGroupLarge/MenuChoicesGroupLarge';
+import MenuChoicesGroupSmall from '../MenuChoicesGroupSmall/MenuChoicesGroupSmall';
+import { Link } from 'react-router-dom';
+import { Hidden } from '@material-ui/core';
 
 const Navbar = () => {
-
     const [menuOpen, setMenuOpen] = useState(false);
-    const [isSelectedOption, setSelectedOption] = useState(0);
 
     const handleMenuChange = () => {
         setMenuOpen(!menuOpen);
     }
 
-    const handleChangeOption = (input) => {
+    const handleChangeOption = () => {
         setMenuOpen(false);
     }
 
@@ -34,71 +35,19 @@ const Navbar = () => {
                     HKMF
                 </div>
             </Link>
-            <div 
-                className={
-                    menuOpen ?
-                    "MenuChoicesGroup fade-in"
-                    : "MenuChoicesGroup fade-out"
-                }
-            >
-                <div className={
-                    isSelectedOption === "First" ? 
-                    "is-selected-option" 
-                    : "MenuChoice MenuChoice1"
-                    }
-                    onClick = {() => handleChangeOption("First")}
-                >
-                    <NavLink 
-                        to="/services" 
-                        className="HamburgerNavLink"
-                        id={
-                            isSelectedOption === "First" ? 
-                            "current-header" 
-                            : ""
-                        }
-                    >
-                        Services
-                    </NavLink>
-                </div>
-                <div className={
-                    isSelectedOption === "Second" ? 
-                    "is-selected-option" 
-                    : "MenuChoice MenuChoice2"
-                    }
-                    onClick = {() => handleChangeOption("Second")}
-                >
-                    <NavLink 
-                        to="/about" 
-                        className="HamburgerNavLink"
-                        id={
-                            isSelectedOption === "Second" ? 
-                            "current-header" 
-                            : ""
-                        }
-                    >
-                        About
-                    </NavLink>
-                </div>
-                <div className={
-                    isSelectedOption === "Third" ? 
-                    "is-selected-option"  
-                    : "MenuChoice MenuChoice3"
-                    }
-                    onClick = {() => handleChangeOption("Third")}
-                >
-                    <NavLink 
-                        to="/contact" 
-                        className="HamburgerNavLink"
-                        id={
-                            isSelectedOption === "Third" ? 
-                            "current-header" 
-                            : ""
-                        }
-                    >
-                        Contact
-                    </NavLink>
-                </div>
-            </div>
+            <Hidden smDown>
+                <MenuChoicesGroupLarge 
+                    menuOpen={menuOpen} 
+                    handleChangeOption={handleChangeOption} 
+                />
+            </Hidden>
+            <Hidden mdUp>
+                <MenuChoicesGroupSmall 
+                    menuOpen={menuOpen} 
+                    handleChangeOption={handleChangeOption} 
+                />
+            </Hidden>
+                
         </div>
     )
 }
