@@ -5,6 +5,8 @@
     background-color: rgba(14,22,24,255);
 }
 
+
+
 .Shadow {
     position: absolute;
     top: 0px;
@@ -18,7 +20,21 @@
 .AboutPageHeaderText {
     display: flex;
     justify-content: center;
-    top: 5vh;
+    top: 8vh;
+    width: 100vw;
+    color: white;
+    position: absolute;
+    padding-top: 15vh;
+    font-size: 36px;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+.AboutPageHeaderTextMed {
+    display: flex;
+    justify-content: center;
+    top: 8vh;
+    left: -25vw;
     width: 100vw;
     color: white;
     position: absolute;
@@ -49,6 +65,7 @@
 }
 
 .AboutPageImageSection {
+    padding-top: 6vh;
     width: 50%;
     height: 100%;
     display: flex;
@@ -86,6 +103,11 @@
     overflow: scroll;
 }
 
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+
 .AboutPageLeftContentColumn {
     height: 100%;
     display: flex;
@@ -97,9 +119,22 @@
     width: 90%;
     height: 100%;
     font-size: 48px;
+    overflow: hidden;
     opacity: 0.05;
     transition: font-size 0.5s, opacity 1s;
     user-select: none;
+}
+
+.text-fade-in {
+    color: white;
+    width: 90%;
+    height: 75%;
+    user-select: none;
+    transition: font-size 0.5s, opacity 1s;
+    opacity: 1;
+    font-size: 20px;
+    line-height: 2rem;
+    overflow: scroll;
 }
 
 .AboutPageCenterButton {
@@ -115,12 +150,17 @@
     top: 50vh;
     opacity: 1;
     user-select: none;
+    transition: all 0.3s ease-in-out;
+     &:hover {
+         color: black;
+         background-color: white;
+         font-size: 23px;
+     }
 }
 
 .fade-in {
     transition: opacity .5s ease-in-out;
     height: auto;
-
 }
 
 .fade-out {
@@ -131,11 +171,6 @@
 
 .image-slide-in {
     transform: translateX(0px);
-}
-
-.text-fade-in {
-    opacity: 1;
-    font-size: 24px;
 }
 
 .CenterButtonContainer {

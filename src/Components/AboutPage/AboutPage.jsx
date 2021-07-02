@@ -15,9 +15,9 @@ const AboutPage = () => {
             <div className="AboutPageBGSection" />
             <div className="AboutPageBGFilterSection" >
             <div className="Shadow" />
-            <div className="AboutPageHeaderText">
-                About
-            </div>
+                <div className="AboutPageHeaderText">
+                    About
+                </div>
                 <div className="AboutPageLeftContentColumn">
                     <div className={
                         buttonIsClicked ? 
@@ -27,7 +27,7 @@ const AboutPage = () => {
                         <p 
                             className={
                                 buttonIsClicked ?
-                                "AboutText text-fade-in"
+                                "text-fade-in"
                                 : "AboutText"
                             }
                         >

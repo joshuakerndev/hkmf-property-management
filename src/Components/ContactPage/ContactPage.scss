@@ -37,6 +37,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .ContactHeaderGrid {
@@ -47,12 +48,14 @@
 
 .ContactHeaderText {
     color: white;
+    font-size: 26px;
+    padding-top: 20px;
 }
 
 .ContactPageHeaderText {
     display: flex;
     justify-content: center;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
     width: 100vw;
     color: white;
     padding-top: 15vh;
@@ -90,6 +93,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .ContactItem {
@@ -102,17 +106,20 @@
 }
 
 .ContactPageBottomMargin {
-    height: 10%;
+    height: 10vh;
     width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 12px;
+    justify-content: flex-end;
+    padding-bottom: 3vh;
+    padding-top: 1vh;
+    font-size: 8px;
+    font-family: 'Noto Serif JP', serif;
 
     p {
-        font-size: 18px;
+        font-size: 14px;
         padding-bottom: 5px;
     }
 }

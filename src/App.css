@@ -3,6 +3,7 @@ body {
     width: 100%;
     overflow: hidden;
     background-color: rgba(14,22,24,255);
+    font-family: 'Raleway', sans-serif;
   }
 
 .page {
