@@ -39,7 +39,10 @@ const ContactPage = () => {
                 </div>
             </div>
             <div className="ContactPageBottomMargin">
-                Copyright 2021 HKMF Property Management, all rights reserved
+                <p>
+                    HKMF
+                </p>
+                Copyright 2021 HKMF Property Management, All rights reserved.
             </div>
         </div>
     )
