@@ -18,16 +18,22 @@ const AboutPage = () => {
             <div className="AboutPageHeaderText">
                 About
             </div>
-                <div className="AboutTextContainer">
-                    <p 
-                        className={
-                            buttonIsClicked ?
-                            "AboutText text-fade-in"
-                            : "AboutText"
-                        }
-                    >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta leo quis nunc malesuada, ac egestas eros pulvinar. Mauris mattis faucibus libero ultrices faucibus. Mauris feugiat sodales purus, ut accumsan nisl varius malesuada. Duis consectetur pretium tincidunt. Sed non malesuada libero. Donec tempus scelerisque ultricies. Morbi mattis turpis ut lacus vestibulum imperdiet. Maecenas sapien purus, fringilla nec mi sed, feugiat aliquam metus.    
-                    </p> 
+                <div className="AboutPageLeftContentColumn">
+                    <div className={
+                        buttonIsClicked ? 
+                        "AboutTextContainerClicked"
+                        : "AboutTextContainer"
+                    }>
+                        <p 
+                            className={
+                                buttonIsClicked ?
+                                "AboutText text-fade-in"
+                                : "AboutText"
+                            }
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta leo quis nunc malesuada, ac egestas eros pulvinar. Mauris mattis faucibus libero ultrices faucibus. Mauris feugiat sodales purus, ut accumsan nisl varius malesuada. Duis consectetur pretium tincidunt. Sed non malesuada libero. Donec tempus scelerisque ultricies. Morbi mattis turpis ut lacus vestibulum imperdiet. Maecenas sapien purus, fringilla nec mi sed, feugiat aliquam metus.    
+                        </p> 
+                    </div>
                 </div>
             </div>
             <div 

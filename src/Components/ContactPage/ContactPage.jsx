@@ -1,12 +1,21 @@
 import React from 'react';
 import './ContactPage.scss';
+import Grid from '@material-ui/core/Grid';
 
 const ContactPage = () => {
     return (
         <div className="ContactPage">
-            <div className="ContactPageHeaderText">
-                Contact
-            </div>
+            <Grid container justify="center" className="ContactHeaderGrid">
+                <Grid item xs={2} sm={1} md={0}>
+
+                </Grid>
+                <Grid item xs={3} sm={3} md={12} className="ContactPageHeaderText">
+                    Contact
+                </Grid>
+                <Grid item xs={7} sm={8} md={0}>
+
+                </Grid>
+            </Grid>
             <div className="BostonStrip">
                 <div className="BostonStripFilterSection">
                     <div className="BostonContactText">
@@ -30,7 +39,7 @@ const ContactPage = () => {
                 </div>
             </div>
             <div className="ContactPageBottomMargin">
-
+                Copyright 2021 HKMF Property Management, all rights reserved
             </div>
         </div>
     )
