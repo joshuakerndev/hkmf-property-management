@@ -7,6 +7,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { Link } from 'react-router-dom';
+import Typography from '@material-ui/core/Typography';
 
 const ServicesModal = ({open, handleClose}) => {
     return (
@@ -26,7 +27,9 @@ const ServicesModal = ({open, handleClose}) => {
                 <DialogActions>
                 <Button onClick={handleClose} variant="outlined" color="primary">
                     <Link className="KnowMoreLink" to='/contact'>
-                        I Want to Know More!
+                        <Typography color="primary">
+                            I Want to Know More!
+                        </Typography>
                     </Link>
                 </Button>
                 </DialogActions>

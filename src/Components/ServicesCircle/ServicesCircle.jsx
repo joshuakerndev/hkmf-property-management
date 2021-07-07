@@ -1,7 +1,7 @@
 import React from 'react';
 import './ServicesCircle.scss';
 
-const ServicesCircle = () => {
+const ServicesCircle = ({ currentCircle }) => {
     return (
         <div className="ServicesCircle">
             <div className={

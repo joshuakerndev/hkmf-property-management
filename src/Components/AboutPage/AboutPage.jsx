@@ -31,7 +31,7 @@ const AboutPage = () => {
                                 : "AboutText"
                             }
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta leo quis nunc malesuada, ac egestas eros pulvinar. Mauris mattis faucibus libero ultrices faucibus. Mauris feugiat sodales purus, ut accumsan nisl varius malesuada. Duis consectetur pretium tincidunt. Sed non malesuada libero. Donec tempus scelerisque ultricies. Morbi mattis turpis ut lacus vestibulum imperdiet. Maecenas sapien purus, fringilla nec mi sed, feugiat aliquam metus.    
+                            Fiona is the heart of HKMF. With over two decades of experience as a real estate developer, she has from 2018 led HKMF in the cities of Boston and Las Vegas, managing up to 65 units concurrently throughout the area. Through dilligence and a hands-on philosophy, she ensures that every unit we partner with is both protected and runs smoothly for maximum effectiveness. Her bold, no-nonsense system of direct management leverages both the newest in cutting-edge technology and the tradition of an honest work ethic in order to cut costs, save time, and ensure a consistent high-quality result that is in line with the values and ethic that drive us to success.
                         </p> 
                     </div>
                 </div>
