@@ -1,6 +1,7 @@
 .Navbar {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     z-index: 400;
     position: fixed;
@@ -17,7 +18,7 @@
 }
 
 .Hamburger {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-right: 7%;
     position: fixed;
     top: 0;

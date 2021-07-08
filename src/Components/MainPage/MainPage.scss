@@ -9,9 +9,12 @@
 
 .MainPageBGSection {
     position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     top:0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url("../../assets/new12.jpg");
     background-position: center;
     background-size: cover;
@@ -20,16 +23,12 @@
 
 .MainPageBottomText {
     color: white;
-    padding-right: 5vw;
-    bottom: 30vh;
-    right: 0;
+    padding-bottom: 21vh;
+    padding-right: 6vw;
     width: 50%;
     text-align: right;
-    position: absolute;
-    top: 72vh;
     font-size: 32px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-backface-visibility: hidden;
 
     p {
         padding-top: 20px;
