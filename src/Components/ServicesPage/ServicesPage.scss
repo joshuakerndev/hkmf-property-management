@@ -16,7 +16,9 @@
 
 .HeaderGrid {
     width: 100%;
-    padding-top: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .ServicesPageBGFilterSection {
@@ -33,7 +35,7 @@
 }
 
 .ServicesPageHeaderText {
-    padding-top: 5vh;
+    padding-top: 85px;
     font-size: 36px;
     letter-spacing: 2px;
     user-select: none;
@@ -42,7 +44,7 @@
 }
 
 .Shadow {
-    position: absolute;
+    position: fixed;
     top: 0px;
     height: 200px;
     width: 100%;
