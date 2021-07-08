@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './AboutPage.scss';
-import ProfileImage from "../../assets/new1.jpg";
+import ProfileImage from "./new1.jpg";
 
 const AboutPage = () => {
 
