@@ -20,7 +20,7 @@ const ContactPage = () => {
                 <div className="BostonStripFilterSection">
                     <div className="BostonContactText">
                         <h1 className="ContactHeaderText">BOSTON</h1>
-                        <p className="ContactItem">Phone: 626.342.5550</p>
+                        <p className="ContactItem">Phone: 857.919.0208</p>
                         <p className="ContactItem">Email: hkmfmanagement@gmail.com</p>
                         <p className="ContactItem">383 Cardinal Medeiros Ave</p>
                         <p className="AddressItem">Cambridge, MA, 02141</p>
@@ -31,7 +31,7 @@ const ContactPage = () => {
                 <div className="VegasStripFilterSection">
                     <div className="VegasContactText">
                         <h1 className="ContactHeaderText">LAS VEGAS</h1>
-                        <p className="ContactItem">Phone: 626.342.5550</p>
+                        <p className="ContactItem">Phone: 857.919.0208</p>
                         <p className="ContactItem">Email: hkmfmanagement@gmail.com</p>
                         <p className="ContactItem">4009 Edgeford Pl</p>
                         <p className="AddressItem">Las Vegas, NV, 89102</p>
